@@ -16,9 +16,10 @@ the system uses 3 databases for achieving this goal
 2. the database of locations of "pikud ha oref" corona test stations
 3. the database of cellphone used to connect to cell towers
 
-the system is comparing the antennas locations and the location of the user to the location of the 
-corona test stations then selecting the less occupide station. and sending back to the 
-telegram user the address.
+the system is:
+a. comparing the antennas locations and the location of the user to the location of the corona test stations 
+b. selecting the less occupide station 
+c. sending back to the telegram user the address.
 
 in addition we are saving logs of events and backing up files / logs / data to the cloud.
 several parts of this project are served as a web service, via API interfaces we wrote.
