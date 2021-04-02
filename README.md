@@ -7,15 +7,16 @@ project name:
 corona 4 u
 
 consept:
-this system will help a user to locate the nearest and less crouded corona test station 
-based upon the address he/she will send to the system using the telegram bot network
+this system will help a user to locate the nearest and less crowded corona test station 
+based upon the address that the user will send to the system using the telegram bot network
 
 how:
-the system uses 2 databases for achieving this goal
-1, the database of locations of cellular antennas
-2, the database of locations of "pikud ha oref" corona test stations
+the system uses 3 databases for achieving this goal
+1. the database of locations of cellular antennas, and
+2. the database of locations of "pikud ha oref" corona test stations
+3. the database of cellphone used to connect to cell towers
 
-comparing the locations of the antennas and the location of the user and location of the 
+the system is comparing the antennas locations and the location of the user to the location of the 
 corona test stations then selecting the less occupide station. and sending back to the 
 telegram user the address.
 
