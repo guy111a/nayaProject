@@ -17,9 +17,9 @@ the system uses 3 databases for achieving this goal
 3. the database of cellphone used to connect to cell towers
 
 the system is:
-a. comparing the antennas locations and the location of the user to the location of the corona test stations 
-b. selecting the less occupide station 
-c. sending back to the telegram user the address.
+1. comparing the antennas locations and the location of the user to the location of the corona test stations 
+2. selecting the less occupide station 
+3. sending back to the telegram user the address.
 
 in addition we are saving logs of events and backing up files / logs / data to the cloud.
 several parts of this project are served as a web service, via API interfaces we wrote.
