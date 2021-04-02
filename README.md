@@ -20,6 +20,7 @@ corona test stations then selecting the less occupide station. and sending back 
 telegram user the address.
 
 in addition we are saving logs of events and backing up files / logs / data to the cloud.
+several parts of this project are served as a web service, via API interfaces we wrote.
 
 
 technologies used:
@@ -36,5 +37,10 @@ in the project we used the following technologies:
 * impala
 * powerBI
 * mongodb compass
+* git
+* public API's 
+* private API's
+
+
 
 
