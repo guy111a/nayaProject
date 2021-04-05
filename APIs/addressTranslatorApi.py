@@ -1,4 +1,5 @@
 
+# imports
 import flask
 from flask import Flask
 import requests
@@ -7,14 +8,16 @@ from geopy.geocoders import GoogleV3
 
 apiKey = '2021'
 
+# declaring the APP name
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
+#  default api reply
 @app.route('/', methods=['GET'])
 def home():
     return "<h1>A.P.I</h1><p>Address translator API.</p>"
 
-
+# some instructions and error messages
 @app.route('/coords', methods=['GET'])
 def rTranslate():
     if 'key' in request.args:
@@ -38,7 +41,7 @@ def rTranslate():
             return 'missing or wrong key'
 
 
-
+# main function and data handling
 @app.route('/address', methods=['GET'])
 def translate():
     if 'key' in request.args:

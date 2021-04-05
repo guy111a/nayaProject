@@ -1,5 +1,6 @@
 # distance calculation
 
+# imports
 import math
 import flask
 from flask import Flask
@@ -7,9 +8,11 @@ import requests
 from flask import request, jsonify
 # from geopy.geocoders import GoogleV3
 
+# declarations
 apiUrl='http://xaviercat.com:8089/coords?key=2021&coords='
 apiKey = '2021'
 
+# distance calculation function
 def calc(fromcord, tocord): 
     x1=float(fromcord.split(',')[0].replace('.', ''))
     y1=float(fromcord.split(',')[1].replace('.', ''))
@@ -22,14 +25,18 @@ def calc(fromcord, tocord):
 
 # print('%.2f' % calc(2,2,4,5))
 
+# app name
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
+
+# default reply
 @app.route('/', methods=['GET'])
 def home():
     return "<h1>OnLin Distance Calculator</h1><p>Distance Calculator API.</p>"
 
 
+# main function
 @app.route('/distance', methods=['GET'])
 def calculate():
     if 'key' in request.args:

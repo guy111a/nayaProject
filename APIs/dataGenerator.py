@@ -24,6 +24,7 @@ companyIn = ['050', '052', '053', '054', '04', '03', '08', '06', '077', '073', '
 
 # mail loop
 while True:
+    # generating random information
     tower=random.choice(open('list_sites_tlv.txt').read().splitlines())
     tel=f'{random.choice(companyOut)}-{str(random.randint(1000000, 9999999))}'.strip()
     timeStamp=int(time.time())
