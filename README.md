@@ -42,6 +42,7 @@ in the project we used the following technologies:
 * git
 * public API's 
 * private API's
+* computing platform is raspberry pi 4
 
 
 
