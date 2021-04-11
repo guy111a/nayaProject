@@ -1,7 +1,7 @@
 # nayaProject
 "big data engineer" - naya college 2021 - final project
 
-this is the final project, made by Zehavit Cohen & Guy Avraham.
+author: Guy Avraham.
 
 project name:
 corona 4 u
