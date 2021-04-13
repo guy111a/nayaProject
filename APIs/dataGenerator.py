@@ -10,7 +10,7 @@ import requests
 import json
 
 # mongoDB connection string
-uri = "mongodb://user:2020P@xaviercat.com/?authSource=bigData&authMechanism=SCRAM-SHA-256"
+uri = "mongodb://***:***@xaviercat.com/?authSource=bigData&authMechanism=SCRAM-SHA-256"
 
 # variables
 date_string=datetime.now()
