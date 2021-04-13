@@ -24,7 +24,7 @@ def rTranslate():
         if str(request.args['key']) == apiKey:
             if 'coords' in request.args:
                 if  request.args['coords'] != '' :
-                    googleKey='AIzaSyB1KHBiMKs6s_DGMb6Prbb0MywWAwWxM_8'
+                    googleKey='****'
                     coords = str(request.args['coords'])
                     print(f' coords {coords}')
                     lat=str(coords[0])
@@ -52,7 +52,7 @@ def translate():
                     address=str(request.args['address'])
                     list=address.split()
                     adrs='+'.join(list)
-                    googleKey='AIzaSyB1KHBiMKs6s_DGMb6Prbb0MywWAwWxM_8'
+                    googleKey='****'
                     url=f"https://maps.googleapis.com/maps/api/geocode/json?address={adrs}&key={googleKey}"
                     print(url)
                     x = requests.get(url).json()
