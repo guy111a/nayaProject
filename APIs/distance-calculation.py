@@ -9,8 +9,8 @@ from flask import request, jsonify
 # from geopy.geocoders import GoogleV3
 
 # declarations
-apiUrl='http://xaviercat.com:8089/coords?key=2021&coords='
-apiKey = '2021'
+apiUrl='http://xaviercat.com:8089/coords?key=***&coords='
+apiKey = '***'
 
 # distance calculation function
 def calc(fromcord, tocord): 
