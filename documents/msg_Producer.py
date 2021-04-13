@@ -9,9 +9,9 @@ from msg_Result import msg_Result
 print('starting telegram bot')
 
 # Get Token from bot Father
-token = '1470090878:AAGXlwguUthBx84SD1OFghppYcu62qrsrdo'
+token = '1470090878:***'
 bot = telebot.TeleBot(token)
-brokers = ['localhost:9092']
+brokers = ['****:9092']
 topics = 'LocationFromBot'
 topics_target = "LocationToBot"
 
