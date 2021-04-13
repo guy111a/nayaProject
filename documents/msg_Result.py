@@ -28,7 +28,7 @@ class msg_Result:
     def get_Response(Location):
         try:
             # API that translating address to coordinates
-            url = f'http://xaviercat.com:8089/address?key=2021&address={Location}'
+            url = f'http://xaviercat.com:8089/address?key=****&address={Location}'
             response = requests.request("GET", url).json()
         except:
             response = {'lat': 99.9999999, 'lng': 99.9999999}
@@ -40,9 +40,9 @@ class msg_Result:
 
         # creating connection to mysql
         mysql_conn = mc.connect(
-            user='naya',
-            password='naya',
-            host='localhost',
+            user='***',
+            password='***',
+            host='***',
             port=3306,
             autocommit=True,  # <--
             database='Cellular')
@@ -69,7 +69,7 @@ class msg_Result:
 
         ## this API will returm coordinates from street  address
         try:
-            url = f'http://xaviercat.com:8089/address?key=2021&address={Location}'
+            url = f'http://xaviercat.com:8089/address?key=****&address={Location}'
             response = requests.request("GET", url).json()
         except:
             response = {'lat': 99.9999999, 'lng': 99.9999999}
@@ -126,7 +126,7 @@ class msg_Result:
                                                                                                                     y1=y,
                                                                                                                     x2=float(row["Latitude"]),
                                                                                                                     y2=float(row["Longitude"]))
-            api = 'http://xaviercat.com:8093/distance?key=2021'
+            api = 'http://xaviercat.com:8093/distance?key=****'
             url = api + distance
             print(url)
             data = requests.get(url)
