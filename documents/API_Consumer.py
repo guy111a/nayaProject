@@ -19,12 +19,12 @@ from datetime import datetime
 
 os.environ['PYSPARK_SUBMIT_ARGS'] = '--packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.1 pyspark-shell'
 
-bootstrapServers = "localhost:9092"
+bootstrapServers = "****:9092"
 
 # connector to mysql
-mysql_username = 'naya'
-mysql_password = 'naya'
-host = 'localhost'
+mysql_username = '****'
+mysql_password = '****'
+host = '****'
 mysql_port = 3306
 mysql_database_name = 'Cellular'
 
@@ -44,7 +44,7 @@ spark = SparkSession\
 
 #kafka variables
 topics = "RawData"
-brokers = ['localhost:9092']
+brokers = ['****:9092']
 
 consumer = KafkaConsumer(
     topics,
