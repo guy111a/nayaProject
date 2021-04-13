@@ -12,7 +12,7 @@ import json
 import requests
 
 # kafka declarations
-bootstrapServers = "localhost:9092"
+bootstrapServers = "***:9092"
 topics = "RawData"
 
 producer = KafkaProducer(bootstrap_servers='***:9092',
