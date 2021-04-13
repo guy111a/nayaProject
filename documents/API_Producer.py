@@ -15,14 +15,14 @@ import requests
 bootstrapServers = "localhost:9092"
 topics = "RawData"
 
-producer = KafkaProducer(bootstrap_servers='localhost:9092',
+producer = KafkaProducer(bootstrap_servers='***:9092',
                          value_serializer=lambda v: json.dumps(v).encode('utf-8'))
 
 # concatanating the URL string
 limit = '&limit=100'
 start_ts = str(int(tm.time()) - 6000)
 fromDate = f'&startTS={start_ts}&stopTS={str(int(tm.time()))}'
-api = ('http://xaviercat.com:8085/api/data/all?key=2021')
+api = ('http://xaviercat.com:8085/api/data/all?key=***')
 url = api + fromDate + limit
 data = requests.get(url)
 print(url)
