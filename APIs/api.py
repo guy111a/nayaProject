@@ -10,13 +10,13 @@ import time
 
 # declarations
 api_key = '2021'
-uri = "mongodb://user:2020P@xaviercat.com/?authSource=bigData&authMechanism=SCRAM-SHA-256"
+uri = "mongodb://***:***@xaviercat.com/?authSource=bigData&authMechanism=SCRAM-SHA-256"
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
 app.config['MONGO_DBNAME'] = 'bigData'
-app.config['MONGO_URI'] = 'mongodb://user:2020P@xaviercat.com/bigData?authSource=bigData&authMechanism=SCRAM-SHA-256'
+app.config['MONGO_URI'] = 'mongodb://***:***@xaviercat.com/bigData?authSource=bigData&authMechanism=SCRAM-SHA-256'
 mongo = PyMongo(app)
 
 #  default api reply
