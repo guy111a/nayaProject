@@ -1,4 +1,5 @@
-# nayaProject
+# Corona 4 you
+
 "big data engineer" - naya college 2021 - final project
 
 author: Guy Avraham.
